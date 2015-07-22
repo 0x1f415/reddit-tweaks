@@ -1,0 +1,41 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("reddit.com") {
+  .entry {
+    padding-top: 1.5em;
+    position: relative;
+  }
+  
+  .tagline {
+    top: .25em;
+    position: absolute;
+    
+    font-size: 0;
+  }
+  
+  time,
+  .subreddit,
+  .author {
+    font-size: x-small;
+  }
+  
+  .tagline .subreddit {
+    float: left;
+  }
+  
+  time {
+    float: right;
+  }
+  
+  .subreddit {
+    padding-right: .5em !important;
+  }
+  
+  .tagline:not(:hover) .RESUserTag {
+    display: none;
+  }
+  
+  .tagline:hover time {
+    padding-left: .5em;
+  }
+}
