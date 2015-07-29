@@ -1,6 +1,6 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("reddit.com") {
+@-moz-document regexp("http(s)?:\/\/[A-z]*.reddit.com((\/)?(\n|$)|\/r\/[A-z]*(\/)?($|\n))") {
   .entry {
     padding-top: 1.5em;
     position: relative;
